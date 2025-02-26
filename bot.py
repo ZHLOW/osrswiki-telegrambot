@@ -124,7 +124,7 @@ async def stats(update: Update, context: CallbackContext) -> None:
         await update.message.reply_text(message)
         
     else:
-        return f"Error fetching stats for {username}."
+        await update.message.reply_text(f"{username} is a bot 🤖")
 
 async def mob(update: Update, context: CallbackContext):
     """Fetch OSRS monster stats."""
